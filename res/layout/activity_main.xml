@@ -1,0 +1,115 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect to:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="/dev/ttyUSB0" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="submitButtonClick"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AT command:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/buttonCMD1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CMD1" />
+
+            <Button
+                android:id="@+id/buttonCMD2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CMD2" />
+
+            <Button
+                android:id="@+id/buttonCMD3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CMD3" />
+
+            <Button
+                android:id="@+id/buttonCMD4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CMD4" />
+
+            <Button
+                android:id="@+id/buttonCMD5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CMD5" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ATD123456789;" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goButtonClick"
+            android:text="GO" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scrollbars="vertical"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logcat:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:text="TextView" />
+
+    </LinearLayout>
