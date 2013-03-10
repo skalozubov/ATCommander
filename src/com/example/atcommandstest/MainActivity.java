@@ -47,6 +47,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	public Button btnCMD3;
 	public Button btnCMD4;
 	public Button btnCMD5;
+	public Button btnControlZ;
 	
 	
 	final Handler handler = new Handler() {
@@ -84,6 +85,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		btnCMD4.setOnClickListener(this);
 		btnCMD5 = (Button)findViewById(R.id.buttonCMD5);
 		btnCMD5.setOnClickListener(this);
+		btnControlZ = (Button)findViewById(R.id.ControlZ);
+		btnControlZ.setOnClickListener(this);
 		
 		String driverPath = getPreference("DriverPath");
 		if (!driverPath.equals("")){
@@ -297,6 +300,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.buttonCMD5:;
 			String prefValue5 = getPreference(CMD5);
 			CommandField.setText(prefValue5);
+			break;
+		case R.id.ControlZ:
+			CommandField.append(Character.toString((char)26));
 			break;
 		default:
 			break;
